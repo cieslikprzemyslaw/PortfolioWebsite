@@ -1,0 +1,9 @@
+.projects{
+    &__title{
+        text-align: center;
+        font-size: $h2mobile340;
+        @media (min-width: 640px) {
+            font-size: $h2mobile640;
+        }
+    }
+}

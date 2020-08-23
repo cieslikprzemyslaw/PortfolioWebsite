@@ -1,0 +1,14 @@
+.technology {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.technology__info {
+  width: 100%;
+}
+/*# sourceMappingURL=Technology.css.map */

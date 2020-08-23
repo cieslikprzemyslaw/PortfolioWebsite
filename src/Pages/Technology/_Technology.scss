@@ -1,0 +1,63 @@
+.technology{
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    &__text{
+        width: 100%;
+        height: 20%;
+    }
+    &__title{
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: $h2mobile340;
+        @media (min-width: 640px) {
+            font-size: $h2mobile640;
+        }
+        
+    }
+
+    &__info{
+        width: 100%;
+        text-align: center;
+        font-size: $paragraph340;
+        @media (min-width: 640px) {
+            font-size: $paragraph640;
+        }
+    }
+    &__skills{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        padding: 10px 0;
+    }
+    &__skill{
+        margin: 20px 5px;
+    }
+    &__description{
+        width: 100%;
+        height: 50%;
+    }
+    &__skill-title{
+        text-align: center;
+        font-size: $h3mobile340;
+        @media (min-width: 640px) {
+            font-size: $h3mobile640;
+        }
+    }
+    &__skill-paragraph{
+        margin: 10px;
+        font-size: $paragraph340;
+        text-align: justify;
+        @media (min-width: 640px) {
+            font-size: $paragraph640;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;CASlB;;AAHI,AAAD,iBAAO,CAAA;EACH,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "../Technology/Technology.scss"
+    ],
+    "names": [],
+    "file": "Technology.css"
+}

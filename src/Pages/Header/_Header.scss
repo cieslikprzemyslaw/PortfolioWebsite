@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(139, 196, 250);
+
+    &__image{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        border: 2px solid white;
+        width: 60%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        @media (min-width: 640px) {
+            width: 40%;
+        }
+        @media (min-width: 800px) {
+            width: 30%;
+        }
+    }
+
+    &__name{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    &__person{
+        font-size: $h2mobile340;
+        @media (min-width: 640px) {
+            font-size: $h2mobile640;
+        }
+    }
+    &__title{
+        font-size: $h3mobile340;
+        @media (min-width: 640px) {
+            font-size: $h3mobile640;
+        }
+    }
+}

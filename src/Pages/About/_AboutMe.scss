@@ -1,0 +1,35 @@
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    min-height: 100vh;
+    letter-spacing: 0.5px;
+    &__title{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: $h3mobile340;
+        @media (min-width: 640px) {
+            font-size: $h3mobile640;
+        }
+        &--main{
+            max-height: 10vh;
+            font-size: $h2mobile340;
+            @media (min-width: 640px) {
+                font-size: $h2mobile640;
+            }
+        }
+    }
+    &__description{
+        min-height: 90vh;
+    }
+    &__text{
+        padding: 5px 0;
+        text-align: justify;
+        line-height: 160%;
+        font-size: $paragraph340;
+        @media (min-width: 640px) {
+            font-size: $paragraph640;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.hobby{
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+    &__title{
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+        font-size: $h2mobile340;
+        border-top: 2px solid rgb(11, 7, 250);
+        border-bottom: 2px solid rgb(11, 7, 250);
+        @media (min-width: 640px) {
+            font-size: $h2mobile640;
+        }
+    }
+
+    &__card{
+        text-align: center;
+        border-bottom: 2px solid gray;
+        &-title{
+            margin: 20px 0;
+            font-size: $h3mobile340;
+            @media (min-width: 640px) {
+                font-size: $h3mobile640;
+            }
+        }
+    }
+
+    &__description{
+        padding: 20px 0;
+        font-size: $paragraph340;
+        @media (min-width: 640px) {
+            font-size: $paragraph640;
+        }
+    }
+}

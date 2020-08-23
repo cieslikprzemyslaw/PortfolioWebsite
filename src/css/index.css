@@ -58,21 +58,27 @@ html {
   top: 40%;
   left: 50%;
   border: 2px solid white;
-  width: 60%;
+  width: 40vw;
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .header__image {
-    width: 40%;
+    width: 30vw;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1600px) {
   .header__image {
-    width: 30%;
+    width: 20vw;
+  }
+}
+
+@media (min-width: 2300px) {
+  .header__image {
+    width: 15vw;
   }
 }
 
@@ -104,6 +110,41 @@ html {
   .header__title {
     font-size: 30px;
   }
+}
+
+@-webkit-keyframes titles {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titles {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.header__change-words {
+  -webkit-animation: titles 5s infinite linear;
+          animation: titles 5s infinite linear;
 }
 
 .technology {
@@ -199,6 +240,14 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .technology__skill-paragraph {
+    width: 40vw;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
+
 .projects__title {
   text-align: center;
   font-size: 35px;
@@ -243,7 +292,7 @@ html {
 
 @media (min-width: 1024px) {
   .project-card__image {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
   }
 }
@@ -265,7 +314,7 @@ html {
 @media (min-width: 1024px) {
   .project-card__description {
     font-size: 25px;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
   }
 }
@@ -380,6 +429,7 @@ html {
 
 .hobby__card {
   text-align: center;
+  max-width: 960px;
   border-bottom: 2px solid gray;
 }
 
@@ -396,6 +446,7 @@ html {
 
 .hobby__description {
   padding: 20px 0;
+  width: 100%;
   font-size: 15px;
 }
 
@@ -457,6 +508,7 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
   font-size: 15px;
 }
 

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import '../../Utils/Images/ProfilPhoto.jpg';
 
 const titles = ["Javascript", "React", "Front End"]
 
 const Header = () => {
     const [titlesId, setTitlesId] = useState(0)
+
+    const photo = require('../../Utils/Images/Untitled.png')
 
     useEffect(()=> {
         const idInterval = setInterval(() => {
@@ -11,7 +14,7 @@ const Header = () => {
             if(titlesId === titles.length){
                 setTitlesId(0)
             }
-        }, 2000);
+        }, 5000);
         return function cleanup() {
             clearInterval(idInterval)
         }
@@ -19,7 +22,7 @@ const Header = () => {
 
     return (
         <div className="header">
-            <img className="header__image" src="https://cdn.pixabay.com/photo/2020/04/02/12/21/man-4994922_960_720.jpg" alt=""/>
+            <img className="header__image" src={photo} alt=""/>
             <section className="header__name">
                 <h2 className="header__person">Przemyslaw Cieslik</h2>
                 <h4 className="header__title">I am Junior <span className="header__change-words">{titles[titlesId]}</span> developer</h4>

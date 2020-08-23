@@ -1,6 +1,7 @@
 .form{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     font-size: $paragraph340;
     @media (min-width: 640px) {
         font-size: $paragraph640;

@@ -9,14 +9,19 @@
         top: 40%;
         left: 50%;
         border: 2px solid white;
-        width: 60%;
+        width: 40vw;
         border-radius: 50%;
         transform: translate(-50%, -50%);
-        @media (min-width: 640px) {
-            width: 40%;
+        @media (min-width: 1024px) {
+            width: 30vw;
         }
-        @media (min-width: 800px) {
-            width: 30%;
+        @media (min-width: 1600px) {
+            width: 20vw;
+            // height: 30vh;
+        }
+        @media (min-width: 2300px) {
+            width: 15vw;
+            // height: 30vh;
         }
     }
 
@@ -41,4 +46,25 @@
             font-size: $h3mobile640;
         }
     }
+
+    @keyframes titles {
+        0%{
+            opacity: 0;
+        }
+        25%{
+            opacity: 1;
+        }
+        75%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    &__change-words{
+        animation: titles 5s infinite linear;
+    }
+
+    
 }

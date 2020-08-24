@@ -2,8 +2,7 @@ import React from 'react';
 
 const ProjectCard = ({ id, name, description, githubUrl, webUrl, imgUrl }) => {
     return (
-        <section className="project-card" key={id}>
-           
+        <section className="project-card" key={id}>           
                 <h3 className="project-card__name">{name}</h3>
                 <p className="project-card__description">{description}</p>
                 <img className="project-card__image" src={imgUrl} alt={name} />

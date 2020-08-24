@@ -22,7 +22,8 @@ const technologyStack = [
             'Progressive Web Applications',
             'Good background ',
             'Animation with use @keyframes',
-            'Flexbox and CSS Grid',
+            'Flexbox',
+            'CSS Grid',
         ],
         color: "2465F1",
     },
@@ -32,7 +33,7 @@ const technologyStack = [
         name: "Javascript",
         description: [
             'Closures and Hoisting',
-            'Working with Objects and Arrays',
+            'ES6',
             'Connect with API (Fetch method)',
             'Knowladge how work async and sync',
             'Good knowledge of the syntax',
@@ -54,7 +55,7 @@ const technologyStack = [
         icon: mdiNpm,
         name: "NPM",
         description: [
-            'Basic knowladge how to work with NPM and how to use it',
+            'Basic knowladge how to work with NPM and how to use it.',
         ],
         color: "C53635",
     },
@@ -63,7 +64,7 @@ const technologyStack = [
         icon: mdiGit,
         name: "GIT",
         description: [
-            'basic comments to work with my repositories and other',
+            'Basic knowledge about commands to work with my repositories and repositories other people. ',
         ],
         color: "E94F32",
     },

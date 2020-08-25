@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import ProjectCard from './ProjectCard';
 
-import { mdiArrowLeftBold, mdiArrowRightBold } from '@mdi/js';
-import Icon from '@mdi/react';
 
 const projectsArray = [
     {
@@ -33,26 +31,6 @@ const projectsArray = [
 ]
 
 const Projects = () => {
-
-    const [index, setIndex] = useState(0);
-    let time = 3000;
-
-    const changeCards = () => {
-        if (index === projectsArray.length - 1) {
-            setIndex(0);
-        } else {
-            setIndex(index => index + 1);
-        }
-    };
-
-    const changeDots = () => {
-
-    }
-
-    useEffect(() => {
-        // const interval = setInterval(changeCards, time)
-        // return () => clearInterval(interval)
-    })
 
     return (
         <section className="projects">

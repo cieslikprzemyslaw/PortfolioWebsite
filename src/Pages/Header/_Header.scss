@@ -37,25 +37,4 @@
             font-size: $h3mobile640;
         }
     }
-
-    @keyframes titles {
-        0%{
-            opacity: 0;
-        }
-        25%{
-            opacity: 1;
-        }
-        75%{
-            opacity: 1;
-        }
-        100%{
-            opacity: 0;
-        }
-    }
-
-    &__change-words{
-        animation: titles 5s infinite linear;
-    }
-
-    
 }

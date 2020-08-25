@@ -1,4 +1,6 @@
 .projects{
+    width: 100%;
+    min-height: 100vh;
     &__title{
         text-align: center;
         font-size: $h2mobile340;
@@ -6,11 +8,5 @@
         @media (min-width: 640px) {
             font-size: $h2mobile640;
         }
-    }
-    &__dot{
-        height: 5vh;
-        width: 5vh;
-        background-color: rgb(173, 46, 46);
-        border-radius: 50%;
     }
 }

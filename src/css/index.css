@@ -98,41 +98,6 @@ html {
   }
 }
 
-@-webkit-keyframes titles {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes titles {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.header__change-words {
-  -webkit-animation: titles 5s infinite linear;
-          animation: titles 5s infinite linear;
-}
-
 .technology {
   width: 100%;
   min-height: 110vh;
@@ -234,6 +199,11 @@ html {
   }
 }
 
+.projects {
+  width: 100%;
+  min-height: 100vh;
+}
+
 .projects__title {
   text-align: center;
   font-size: 35px;
@@ -246,24 +216,16 @@ html {
   }
 }
 
-.projects__dot {
-  height: 5vh;
-  width: 5vh;
-  background-color: #ad2e2e;
-  border-radius: 50%;
-}
-
 .project-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px 0;
-  min-height: 100vh;
 }
 
 .project-card__name {
+  margin: 20px 0 0 0;
   font-size: 25px;
   width: 100%;
   text-align: center;
@@ -293,7 +255,7 @@ html {
 }
 
 .project-card__description {
-  padding: 0 10px;
+  padding: 20px 10px;
   text-align: justify;
   width: 100%;
   font-size: 15px;
@@ -301,7 +263,7 @@ html {
 
 @media (min-width: 640px) {
   .project-card__description {
-    padding: 15px;
+    padding: 20px;
     font-size: 20px;
   }
 }
@@ -346,9 +308,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px;
   min-height: 100vh;
   letter-spacing: 0.5px;
 }
@@ -367,7 +329,11 @@ html {
 }
 
 .about-me__title--main {
+  width: 100vw;
   max-height: 10vh;
+  padding: 10px;
+  border-top: 2px solid #0b07fa;
+  border-bottom: 2px solid #0b07fa;
   font-size: 35px;
 }
 
@@ -410,6 +376,7 @@ html {
 .hobby__title {
   margin: 20px 0;
   width: 100%;
+  padding: 10px;
   text-align: center;
   font-size: 35px;
   border-top: 2px solid #0b07fa;

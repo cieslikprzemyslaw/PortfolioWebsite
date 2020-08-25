@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 import ProjectCard from './ProjectCard';
-import { useState } from 'react';
+
+import { mdiArrowLeftBold, mdiArrowRightBold } from '@mdi/js';
+import Icon from '@mdi/react';
 
 const projectsArray = [
     {
@@ -35,11 +38,11 @@ const Projects = () => {
     let time = 3000;
 
     const changeCards = () => {
-        if (index === projectsArray.length-1) {
+        if (index === projectsArray.length - 1) {
             setIndex(0);
-        }else{
+        } else {
             setIndex(index => index + 1);
-        }    
+        }
     };
 
     const changeDots = () => {
@@ -47,25 +50,26 @@ const Projects = () => {
     }
 
     useEffect(() => {
-        const interval = setInterval(changeCards, time)
-        return () => clearInterval(interval)
+        // const interval = setInterval(changeCards, time)
+        // return () => clearInterval(interval)
     })
 
     return (
         <section className="projects">
             <h3 className="projects__title">My Projects</h3>
-            <ProjectCard
-                id={projectsArray[index].id}
-                name={projectsArray[index].name}
-                description={projectsArray[index].description}
-                githubUrl={projectsArray[index].githubUrl}
-                webUrl={projectsArray[index].webUrl}
-                imgUrl={projectsArray[index].imgUrl} />
-                {projectsArray.map(dot => {
+            <section className="projects__card">
+                {projectsArray.map(project => {
                     return(
-                        <span className="projects__dot"></span>
+                        <ProjectCard
+                    id={project.id}
+                    name={project.name}
+                    description={project.description}
+                    githubUrl={project.githubUrl}
+                    webUrl={project.webUrl}
+                    imgUrl={project.imgUrl} />
                     )
                 })}
+            </section>
         </section>
     );
 };

@@ -1,7 +1,7 @@
 .about-me{
     display: flex;
+    margin-top: 20px;
     flex-wrap: wrap;
-    padding: 10px;
     min-height: 100vh;
     letter-spacing: 0.5px;
     &__title{
@@ -13,7 +13,11 @@
             font-size: $h3mobile640;
         }
         &--main{
+            width: 100vw;
             max-height: 10vh;
+            padding: 10px;
+            border-top: 2px solid #0b07fa;
+            border-bottom: 2px solid #0b07fa;
             font-size: $h2mobile340;
             @media (min-width: 640px) {
                 font-size: $h2mobile640;
